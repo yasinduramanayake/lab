@@ -1,0 +1,20 @@
+<html>
+    <head>
+        <body>
+            <script>
+           class Vehicle {
+               constructor(type) {
+               this.type = type;
+               Vehicle.VehicleCount++
+                }
+           }
+            Vehicle.prototype.drive = function print(){
+                document.write("Vehicle is driving");
+            }
+             var vehicleCount = Vehicle.vehicleCount;
+             var vehicle1 = new Vehicle("yasi");
+             vehicle1.type;
+            </script>
+        </body>
+    </head>
+</html>

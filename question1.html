@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <body>
+            <script>
+        function getValue(callback) {
+            let value = 0;
+            setTimeout(function () {
+            value = 10;
+            callback(value);
+            },1000);
+        }
+        function getNewvalue(value,callback){
+                setTimeout(function (){
+                    callback(value*100);
+                },1000);
+            }
+
+        
+    getValue(function (value){
+        getNewvalue(value,function (newvalue){
+                console.log(newvalue);
+    })
+
+});
+        
+            </script>
+        </body> 
+    </head>
+</html>
