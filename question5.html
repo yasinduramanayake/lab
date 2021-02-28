@@ -1,0 +1,19 @@
+<html>
+    <head>
+        <body>
+            <script>
+           function Vehicle(type){
+               Vehicle.INSTANCES++;
+               this.type= type;
+           }
+           Vehicle.INSTANCES = 0;
+           Vehicle.prototype.getType = function(){
+               return this.type;
+           }
+          const car = new Vehicle('Car');
+          console.log(car.getType());
+          console.log(Vehicle.INSTANCES);
+            </script>
+        </body>
+    </head>
+</html>
